@@ -17,3 +17,4 @@ int number1 = Convert.ToInt32(Console.ReadLine());
 int square = number * number;
 Console.WriteLine($"Квадрат числа {number} = {square}");
 Console.WriteLine($"Квадрат числа {number1} = {square}");
+
