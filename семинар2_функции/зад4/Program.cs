@@ -4,7 +4,7 @@
 // 46-> no
 // 161 -> yes
 
-Console.Write("Введите число: ");
+/*Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
 bool Endnum(int num)
@@ -14,4 +14,18 @@ bool Endnum(int num)
 
 bool result = Endnum(number);
 string res = result ? "true" : "false";
-Console.Write(res);
+Console.Write(res);*/
+
+
+Console.Write("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+bool Endnum(int num)
+{
+    return num % 7 == 0 && num % 23 == 0;
+}
+
+bool result = Endnum(number);
+
+Console.Write(result 
+? "Число делится одновременно на 7 и 23" : "Число не делится одновременно на 7 и 23" );
