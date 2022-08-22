@@ -7,3 +7,43 @@
 // [1, 2, 3, 6, 2] -> 0
 // [10, 11, 12, 13, 14] -> 5
 
+int[] array = CreateArrayRndInt(123, 0, 150);
+PrintArray(array);
+Console.WriteLine("->" + CalcArray(array));
+
+int[] CreateArrayRndInt(int size, int min, int max)
+{
+    int[] array = new int[size];
+    Random rnd = new Random();
+
+    for (int i = 0; i < size; i++)
+    {
+        array[i] = rnd.Next(min, max + 1);
+
+    }
+    return array;
+}
+
+void PrintArray(int[] array)
+{
+    Console.Write("[");
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (i < array.Length - 1) Console.Write($"{array[i]},");
+    }
+    Console.Write(array[array.Length - 1]);// добавляем последний элемент в массив
+    Console.Write("]");
+}
+
+int CalcArray(int[] arr)
+{
+    int count = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (arr[i] >= 10 && arr[i] <= 99)
+        {
+            count++;
+        }
+    }
+    return count;
+}
