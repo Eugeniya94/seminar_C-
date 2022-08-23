@@ -9,6 +9,7 @@
 
 int[] array = CreateArrayRndInt(123, 0, 150);
 PrintArray(array);
+
 Console.WriteLine("->" + CalcArray(array));
 
 int[] CreateArrayRndInt(int size, int min, int max)
